@@ -207,7 +207,9 @@ end
 
 
 def long_name_steals_a_ton?
-  
+  data = all_players
+  player = player_with_longest_name
+  record = dataplayer
   
 end
 
