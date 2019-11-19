@@ -188,8 +188,6 @@ def winning_team
   end
 end
 
-
-
 def player_with_longest_name
   data = all_players
   record = 0
@@ -204,7 +202,8 @@ def player_with_longest_name
   result
 end
 
-
+def longest_name_stats
+  
 
 def long_name_steals_a_ton?
   data = all_players
