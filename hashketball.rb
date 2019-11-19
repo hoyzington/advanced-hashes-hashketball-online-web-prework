@@ -205,14 +205,19 @@ end
 def player_with_longest_name
   data = longest_name_stats
   result = data[:player_name]
+  result
 end
 
 def long_name_steals_a_ton?
-  player_stats = longest_name_stats
-  player = player_with_longest_name
-  record = data[:steals]
+  data = all_players
+  record = longest_name_stats[:steals]
   i = 0
-  while i < 
-  
+  while i < data.size do
+    if data[i][:steals] > record
+      return false
+    end
+    i += 0
+  end
+  return true
 end
 
