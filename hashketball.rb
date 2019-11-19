@@ -185,6 +185,7 @@ def winning_team
     return data[0][:team_name]
   else
     return data[1][:team_name]
+  end
 end
 
 
