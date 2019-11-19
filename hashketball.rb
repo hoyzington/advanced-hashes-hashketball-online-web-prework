@@ -203,8 +203,8 @@ def longest_name_stats
 end
 
 def player_with_longest_name
-  data = longest_name_stats
-  result = data[:player_name]
+#  data = longest_name_stats
+  result = longest_name_stats[:player_name]
   result
 end
 
