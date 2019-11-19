@@ -184,7 +184,7 @@ def winning_team
   if team1 > team2
     return data[0][:team_name]
   else
-    return 
+    return data[1][:team_name]
 end
 
 
