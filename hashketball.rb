@@ -188,11 +188,6 @@ def winning_team
   end
 end
 
-def player_with_longest_name
-  data = longest_name_stats
-  result = data[:player_name]
-end
-
 def longest_name_stats
   data = all_players
   record = 0
@@ -207,11 +202,17 @@ def longest_name_stats
   result
 end
 
+def player_with_longest_name
+  data = longest_name_stats
+  result = data[:player_name]
+end
 
 def long_name_steals_a_ton?
-  data = all_players
+  player_stats = longest_name_stats
   player = player_with_longest_name
-  record = dataplayer
+  record = data[:steals]
+  i = 0
+  while i < 
   
 end
 
