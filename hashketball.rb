@@ -166,7 +166,6 @@ end
 
 def winning_team
   data = remove_first_key
-  sum = 0
   i = 0
   while i < data.size do
     ii = 0
