@@ -191,7 +191,18 @@ end
 
 
 def player_with_longest_name
-  
+  data = all_players
+  record = 0
+  i = 0
+  while i < data.size do
+    if data[i][key] > record
+      record = data[i][key]
+      result = data[i][value]
+    end
+    i += 1
+  end
+  result
+
   
 end
 
