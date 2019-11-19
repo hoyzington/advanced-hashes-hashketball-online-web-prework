@@ -166,9 +166,12 @@ end
 
 def winning_team
   data = remove_first_key
+  sum = 0
   i = 0
   while i < data.size do
-    data[i][:players]
+    ii = 0
+    
+    sum += data[i][:players]
   
 end
 
