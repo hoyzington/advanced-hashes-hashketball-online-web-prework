@@ -91,6 +91,20 @@ def stat_compare(key, value)
   result
 end
 
+def longest_name_stats
+  data = all_players
+  record = 0
+  i = 0
+  while i < data.size do
+    if data[i][:player_name].size > record
+      record = data[i][:player_name].size
+      result = data[i]
+    end
+    i += 1
+  end
+  result
+end
+
 
 #                                 MAIN METHODS
 
@@ -204,4 +218,3 @@ def long_name_steals_a_ton?
   end
   return true
 end
-
