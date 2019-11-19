@@ -170,9 +170,21 @@ def winning_team
   while i < data.size do
     sum = 0
     ii = 0
-    while i < 
-    sum += data[i][:players]
-  
+    while ii < data[i][:players].size
+      sum += data[i][:players][ii][:points]
+      ii += 1
+    end
+    if i < 1
+      team1 = sum
+    else
+      team2 = sum
+    end
+    i += 1
+  end
+  if team1 > team2
+    return data[0][:team_name]
+  else
+    return 
 end
 
 
