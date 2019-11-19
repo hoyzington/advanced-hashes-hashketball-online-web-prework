@@ -216,7 +216,7 @@ def long_name_steals_a_ton?
     if data[i][:steals] > record
       return false
     end
-    i += 0
+    i += 1
   end
   return true
 end
