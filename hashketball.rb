@@ -187,20 +187,6 @@ def winning_team
   end
 end
 
-def longest_name_stats
-  data = all_players
-  record = 0
-  i = 0
-  while i < data.size do
-    if data[i][:player_name].size > record
-      record = data[i][:player_name].size
-      result = data[i]
-    end
-    i += 1
-  end
-  result
-end
-
 def player_with_longest_name
   result = longest_name_stats[:player_name]
   result
